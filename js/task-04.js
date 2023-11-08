@@ -3,10 +3,10 @@ const incBtn = document.querySelector(`button[data-action="increment"]`);
 const counter = document.getElementById("value");
 let count = 0;
 decBtn.addEventListener("click", () => {
-  count += 1;
+  count -= 1;
   counter.textContent = count;
 });
 incBtn.addEventListener("click", () => {
-  count -= 1;
+  count += 1;
   counter.textContent = count;
 });
